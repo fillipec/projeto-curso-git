@@ -1,15 +1,15 @@
 <?php
 
 	$categorias = [];
-	$categorias = ["infantil"];
-	$categorias = ["adolescente"];
-	$categorias = ["adulto"];
+	$categorias[] = "infantil";
+	$categorias[] = "adolescente";
+	$categorias[] = "adulto";
 
 
 	var_dump($categorias);
 
-	$nome = 'Fillipe';
-	$idade = 32;
+	$nome = 'Garibaldi';
+	$idade = 13;
 
 	if($idade >= 6 && $idade <= 12){
 		echo "O competidor ".$nome." pertence a categoria infantil";
