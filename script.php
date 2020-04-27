@@ -6,10 +6,10 @@
 	$categorias[] = "adulto";
 
 
-	var_dump($categorias);
+	//var_dump($categorias);
 
-	$nome = 'Garibaldi';
-	$idade = 13;
+	$nome = $_POST['nome'];
+	$idade = $_POST['idade'];
 
 	if($idade >= 6 && $idade <= 12){
 		echo "O competidor ".$nome." pertence a categoria infantil";
