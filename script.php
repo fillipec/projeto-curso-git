@@ -1,4 +1,10 @@
 <?php
+	//inicio de sessão
+
+	session_start();
+	
+
+	//criar vetor categoria
 
 	$categorias = [];
 	$categorias[] = "infantil";
@@ -10,11 +16,10 @@
 
 	$nome = $_POST['nome'];
 	$idade = $_POST['idade'];
-	//var_dump($nome);
-	//var_dump($idade);
+
 	//return 0;
 	if(empty($nome) || empty($idade)){
-		echo "Preencha todos os dados";
+		$_SESSION['mensagem-erro'] = "Preencha todos os dados";
 		return;
 	}
 	if (strlen($nome) < 5) {
