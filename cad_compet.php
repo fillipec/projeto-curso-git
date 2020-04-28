@@ -11,9 +11,17 @@
 		<h2> Cadastro de Competidor</h2>
 		<form method="post" action="script.php">
 			<?php
-				 $mensagemErro = isset($_SESSION['mensagem-erro']) ? $_SESSION['mensagem-erro'] : '';
+				
+				$mensagemSucesso = isset($_SESSION['mensagem-sucesso']) ? $_SESSION['mensagem-sucesso'] : '';
 
-				 if(!empty($mensagemErro)){
+				if(!empty($mensagemSucesso)){
+				 	echo $mensagemSucesso;
+				}
+
+
+				$mensagemErro = isset($_SESSION['mensagem-erro']) ? $_SESSION['mensagem-erro'] : '';
+
+				if(!empty($mensagemErro)){
 				 	echo $mensagemErro;
 				}
 			?>
