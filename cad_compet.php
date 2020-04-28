@@ -10,6 +10,13 @@
 	<div style="text-align: center;">
 		<h2> Cadastro de Competidor</h2>
 		<form method="post" action="script.php">
+			<?php
+				 $mensagemErro = isset($_SESSION['mensagem-erro']) ? $_SESSION['mensagem-erro'] : '';
+
+				 if(!empty($mensagemErro)){
+				 	echo $mensagemErro;
+				}
+			?>
 			<p> 
 				Nome: <input type="text" name="nome" >
 				<span style="color: red;">*</span>
