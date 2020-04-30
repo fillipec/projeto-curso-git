@@ -1,9 +1,13 @@
 <?php
 	//inicio de sessão
 
-	session_start();
+    include "servicos/servicoMensagemSessao.php";
+    include "servicos/servicoCategoriaCompetidor.php";
+    include "servicos/servicoValidacao.php";
 	
+    $nome = $_POST['nome'];
+    $idade = $_POST['idade'];
 
-	//criar vetor categoria
+    defineCategoriaCompetidor($nome, $idade);
 
-	
+    header('location: cad_compet.php')

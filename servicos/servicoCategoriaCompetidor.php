@@ -8,11 +8,6 @@
 		$categorias[] = "adulto";
 
 
-		$nome = $_POST['nome'];
-		$idade = $_POST['idade'];
-
-		//return 0;
-
 		if (validaNome($nome) && validaIdade($idade)) {
 			
 			if($idade >= 6 && $idade <= 12){
