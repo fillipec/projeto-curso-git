@@ -6,7 +6,7 @@
 		if (validaNome($nome) && validaIdade($idade))
 		{
 			removeMensagemErro();
-			
+				
 			if($idade >= 6 && $idade <= 12)
 			{
 			
