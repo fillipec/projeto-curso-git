@@ -10,4 +10,4 @@
 
     defineCategoriaCompetidor($nome, $idade);
 
-    header('location: cad_compet.php')
+    header('location: cad_compet.php');

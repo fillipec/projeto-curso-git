@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	include "servicos/servicoMensagemSessao.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,14 +12,14 @@
 		<form method="post" action="script.php">
 			<?php
 				
-				$mensagemSucesso = isset($_SESSION['mensagem-sucesso']) ? $_SESSION['mensagem-sucesso'] : '';
+				$mensagemSucesso = getMensagemSucesso();
 
 				if(!empty($mensagemSucesso)){
 				 	echo $mensagemSucesso;
 				}
 
 
-				$mensagemErro = isset($_SESSION['mensagem-erro']) ? $_SESSION['mensagem-erro'] : '';
+				$mensagemErro = getMensagemErro();
 
 				if(!empty($mensagemErro)){
 				 	echo $mensagemErro;

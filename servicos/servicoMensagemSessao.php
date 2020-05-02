@@ -44,13 +44,13 @@
 	function removeMensagemSucesso() : void
 	{
 		if (isset($_SESSION['mensagem-sucesso'])) {
-			return unset($_SESSION['mensagem-sucesso'])
+			unset($_SESSION['mensagem-sucesso']);
 		}
 	}
 
 	function removeMensagemErro() : void
 	{
 		if (isset($_SESSION['mensagem-erro'])) {
-			return unset($_SESSION['mensagem-erro'])
+			unset($_SESSION['mensagem-erro']);
 		}
 	}
